@@ -1,0 +1,962 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Gabarito", sans-serif;
+}
+
+.navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid white;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+.navbar__s1 {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.navbar__s2 {
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.navbar__s2 p {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.navbar__s2 p:hover {
+    background-color: rgb(203, 202, 202);
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.navbar__s2 a {
+    text-decoration: none;
+}
+
+.navbar__s2 a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navbar__s3 {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.navbar__s3--s1 {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    padding: 5px 10px; 
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+ }
+
+.navbar__s3--s1:hover {
+    background-color: rgb(203, 202, 202);
+    color: black;
+    cursor: pointer;
+   
+}
+
+.navbar__s3--s1 p {
+    margin-left: 5px; 
+}
+
+.navbar__s3--s2 {
+    background-color: rgb(2, 0, 0);
+    color: rgb(247, 242, 242);
+    padding: 10px 20px; 
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar__s3--s2:hover {
+    background-color: rgb(50, 50, 50); 
+}
+
+
+.whereto h1 {
+font-size: 55px;
+text-align: center;
+margin-top: 25px;
+}
+
+.icons__with__name  {
+    display: flex;
+justify-content: center;
+    
+ gap: 25px;
+    padding-top: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    
+}
+
+.icons__with__name span {
+    font-weight: 100;
+    border-bottom: 2px solid transparent;
+}
+
+.icons__with__name span:hover {
+    border-bottom: 2px solid black; 
+}
+
+.search {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 30px;
+    width:50%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+margin-left: 350px;
+    
+    }
+
+    .search__s1 {
+        display: flex;
+        margin-left: 10px;
+        align-items: center;
+        position: relative;
+    
+    }
+    
+    .search__s1 input {
+        display:flex ;
+ margin-left: 10px;
+        border: none;
+        width: 100%;
+        height: 30px;
+        font-size: 20px;
+        background-color: transparent;
+    
+    }
+    
+    .search__s1 input:focus {
+      outline: none;
+    }
+    
+    .search__s1 h3 {
+        display: flex;
+        position: absolute;
+       margin-left: 650px;
+background-color: #34E0A1;
+border: 1px solid #34E0A1;
+color: black;
+padding: 10px;
+border-radius: 20px;
+cursor: pointer;
+
+    }
+
+    .search__s1 h3:hover {
+        background-color: #50f4b8;
+        color: black;
+        transition: 3s;
+    }
+
+    .imagebox {
+        position: relative; 
+        background-color: #DBCAFE;
+        margin-right: 60px;
+        margin-left: 150px;
+        margin-top: 20px;
+        width: 1220px;
+        border-radius: 10px;
+    }
+    
+    .imagebox img {
+        border-radius: 10px;
+        height: 400px;
+        width: 1220px;
+    }
+    
+    .image__text {
+        position: absolute;
+        top: 70px; 
+        left: 150px;
+       
+        padding: 10px;
+    
+        color: #000;
+    }
+
+    .image__text p.ff {
+        font-size: 25px;
+    }
+
+    .image__text p.gg {
+        font-size: 20px;
+    }
+    
+    .image__text h5, .image__text span {
+        margin: 0;
+    }
+    
+    .image__text span {
+        background-color:white ;
+        color: black;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .image__text p {
+       color: #301D49;
+       font-size: 50px;
+       font-weight: 500;
+    }
+
+    .image__text button {
+        background-color: #321c4f;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .image__text button:hover {
+        background-color: #6b489a;
+        transition: 2s;
+    }
+
+    .best__choice {
+        margin-left: 150px;
+    }
+
+    .best__choice h3 {
+margin-top: 20px;
+margin-bottom: 10px;
+    }
+
+    .best__choice p {
+
+        margin-bottom: 10px;
+    }
+
+    .best__choice__img {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      flex-basis:22.91% ;
+    }
+
+    .best__choice__img img {
+        margin-left: 5px;
+        border-radius: 5px;
+    }
+
+    .overlay__text1 {
+        position: absolute;
+        top: 245px;
+        color: white;
+        font-size: 30px;
+        left: 30px;
+    }
+
+    .overlay__text2 {
+        position: absolute;
+        top: 245px;
+        left: 320px;
+        color: white;
+        font-size: 30px;
+    }
+
+    .overlay__text3 {
+        position: absolute;
+        left: 620px;
+        top: 245px;
+        color: white;
+        font-size:30px ;
+    }
+
+    .overlay__text4 {
+        position: absolute;
+        left: 925px;
+        top: 245px;
+        color: white;
+        font-size: 30px;
+    }
+
+    .best__choice__img .i1:hover {
+        background-color: white;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .best__choice__img .i2:hover {
+        background-color: white;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .best__choice__img .i3:hover {
+        background-color: white;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .best__choice__img .i4:hover {
+        background-color: white;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .ways__to__tour__chennai {
+        margin-left: 150px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .ways__to__tour__chennai h3 {
+        margin-top: 20px;
+margin-bottom: 10px;
+    }
+
+    .ways__to__tour__chennai p {
+         margin-bottom: 10px;
+    }
+    
+    
+    .tour__chennai {
+
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        gap: 5px;
+    }
+
+    .tour__chennai__s1 {
+        flex-basis: 10%;
+        position: relative;
+       
+       
+    }
+
+    .tour__chennai__s1 img {
+    border-radius: 5px;
+   
+    
+    }
+
+    .ion {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        border-radius: 50px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .tour__chennai__s1 .i1:hover {
+        background-color: white;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .tour__chennai__s1 .i2:hover {
+        background-color: white;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .tour__chennai__s1 .i3:hover {
+        background-color: white;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .tour__chennai__s1 .i4:hover {
+        background-color: white;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .Autumn__in__Asia {
+
+        margin-left: 150px;
+    }
+
+    .Autumn__in__Asia h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+            }
+        
+            .Autumn__in__Asia p {
+                margin-bottom: 10px;
+            }   
+
+            .Autumn__in__Asia__img {
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                flex-basis:22.91% ;
+              }
+          
+              .Autumn__in__Asia__img img {
+                  margin-left: 5px;
+                  border-radius: 5px;
+              }
+          
+              .overlay__1 {
+                position: absolute;
+                top: 245px;
+                color: white;
+                font-size: 30px;
+                left: 30px;
+            }
+        
+            .overlay__2 {
+                position: absolute;
+                top: 245px;
+                left: 320px;
+                color: white;
+                font-size: 30px;
+            }
+        
+            .overlay__3 {
+                position: absolute;
+                left: 620px;
+                top: 245px;
+                color: white;
+                font-size:30px ;
+            }
+        
+            .overlay__4 {
+                position: absolute;
+                left: 925px;
+                top: 245px;
+                color: white;
+                font-size: 30px;
+            }
+
+            .Autumn__in__Asia__img .i1:hover {
+                background-color: white;
+                opacity: 0.8;
+                cursor: pointer;
+            }
+        
+            .Autumn__in__Asia__img .i2:hover {
+                background-color: white;
+                opacity: 0.8;
+                cursor: pointer;
+            }
+        
+            .Autumn__in__Asia__img .i3:hover {
+                background-color: white;
+                opacity: 0.8;
+                cursor: pointer;
+            }
+        
+            .Autumn__in__Asia__img .i4:hover {
+                background-color: white;
+                opacity: 0.8;
+                cursor: pointer;
+            }
+
+            .more__to__explore {
+                width: 100%;
+                background-color: #FAF1ED;
+                margin-top: 10px;
+            }
+
+            
+            
+            .more__explore__img {
+                display: flex;
+                justify-content: space-between;
+                width: 1220px; 
+                gap: 20px; 
+                margin-left: 150px;
+            }
+
+            .more__explore__img .i20:hover {
+                background-color: white;
+                opacity: 0.8;
+                cursor: pointer;
+            }
+
+            .more__explore__img .i21:hover {
+                background-color: white;
+                opacity: 0.8;
+                cursor: pointer;
+            }
+
+            .more__explore__img .i22:hover {
+                background-color: white;
+                opacity: 0.8;
+                cursor: pointer;
+            }
+            
+            .more__explore__img div {
+                flex-basis: 30%;
+                display: flex;
+                flex-direction: column; 
+                align-items: center; 
+            }
+            
+            .more__explore__img img {
+                max-width: 100%;
+                height: auto;
+            }
+            
+            .more__explore__img a {
+                text-align: center; 
+                margin-top: 10px;
+                display: block;
+            }
+            
+            
+            .Top__destination {
+                margin-left: 150px;
+            }
+
+            .Top__destination h3 {
+                margin-top: 20px;
+                margin-bottom: 10px;
+                    
+            }
+                
+                    .Top__destination p {
+                        margin-bottom: 10px;
+                    }   
+        
+                    .Top__destination__img {
+                        position: relative;
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-basis:22.91% ;
+                      }
+                  
+                      .Top__destination__img img {
+                          margin-left: 5px;
+                          border-radius: 5px;
+                      }
+                  
+                      .overla__1 {
+                        position: absolute;
+                        top: 245px;
+                        color: white;
+                        font-size: 30px;
+                        left: 30px;
+                    }
+                
+                    .overla__2 {
+                        position: absolute;
+                        top: 245px;
+                        left: 320px;
+                        color: white;
+                        font-size: 30px;
+                    }
+                
+                    .overla__3 {
+                        position: absolute;
+                        left: 620px;
+                        top: 245px;
+                        color: white;
+                        font-size:30px ;
+                    }
+                
+                    .overla__4 {
+                        position: absolute;
+                        left: 925px;
+                        top: 245px;
+                        color: white;
+                        font-size: 30px;
+                    }
+        
+                    .Top__destination__img .i1:hover {
+                        background-color: white;
+                        opacity: 0.8;
+                        cursor: pointer;
+                    }
+                
+                    .Top__destination__img .i2:hover {
+                        background-color: white;
+                        opacity: 0.8;
+                        cursor: pointer;
+                    }
+                
+                    .Top__destination__img .i3:hover {
+                        background-color: white;
+                        opacity: 0.8;
+                        cursor: pointer;
+                    }
+                
+                    .Top__destination__img .i4:hover {
+                        background-color: white;
+                        opacity: 0.8;
+                        cursor: pointer;
+                    }
+
+                    .image__and__its__text {
+                      margin-left: 150px;
+                         margin-top: 20px;
+}
+                    .image__container img {
+                        width: 1220px;
+                        border-radius: 20px;
+
+                        
+                    }
+
+                    .image__and__its__text {
+                        position: relative;
+                    }
+
+                    .sentence {
+                        position: absolute;
+                        top: 320px;
+                        left: 15px;
+                        color: white;
+                        font-size: 30px;
+                       
+                    }
+
+                    .sentence button {
+                        background-color: white;
+                        color: black;
+                        font-weight: 400;
+                        padding: 15px;
+                        border-radius: 20px;
+                        cursor: pointer;
+                    }
+
+                    .sentence button:hover {
+                        background-color:whitesmoke;
+                        color:black;
+                    }
+
+
+                    .footer {
+                        padding: 30px;
+                        background-color: #FAF1ED;
+                        color: #603333;
+                        margin-top: 20px;
+                    
+                    }
+                    .footer__one {
+                        display: flex;
+                        gap: 10px;
+                    }
+                    
+                    .footer__one p{
+                        margin: 20px;
+                    }
+                    
+                    .footer__two {
+                        display: flex;
+                      margin:20px;
+                      align-items: center;
+                        justify-content: space-between;
+                    }
+
+
+                    /* Media Quries */
+
+                    /* Existing styles here... */
+
+                    @media screen and (max-width:800px) {
+                        body {
+                            font-size: 20px;
+                        }
+                    }
+
+
+/* Media query for screen sizes less than 600px */
+@media (max-width: 600px) {
+    body {
+font-size: 10px;
+
+
+    }
+
+    .navbar__s1{
+        width: 1200px;
+        margin-left: 140px;
+        background-color: white;
+
+       
+    }    .navbar__s2,.navbar__s3{
+        display: none;
+      
+
+    }
+
+    .whereto h1 {
+        font-size: 30px; 
+        margin-top: 15px;
+        display: flex;
+margin-left: 180px; 
+    }
+
+    .icons__with__name {
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-items: center;
+   
+        gap: 5px; 
+       
+        margin-left: 90px;
+    }
+
+    .icons__with__name span {
+        font-size: 16px; 
+    }
+
+    .search {
+       margin-left: 100px;
+       width: 340px;
+        
+    }
+
+    .search__s1 input {
+        width: 100vh;
+        font-size: 17px;
+       
+    }
+    .search__s1 h3 {
+        display: flex;
+        justify-content: center;
+        margin-left: 250px;
+    }
+
+    .imagebox {
+        margin-left: 90px;
+        width:350px;
+        height: 300px;
+    }
+
+    .imagebox img {
+        display: flex;
+        justify-content: center;
+        width:350px;
+        height: 280px;
+    }
+
+    .image__text  {
+       font-size: 15px;
+       top: 40px;
+       left: 40px;
+       
+    }
+
+    .image__text p.gg {
+        font-size: 10px;
+    }
+
+    .image__text p.ff {
+        font-size: 15px;
+        width: 200px;
+        margin-top: 10px;
+       
+    }
+
+    .image__text p {
+        font-size: 15px;
+    }
+
+
+ .best__choice {
+    margin-left: 100px;
+ }
+
+.i1 {
+    margin-bottom: 5px;
+ }
+
+ .i2 {
+    margin-bottom: 5px;
+ }
+ .i4 {
+    margin-bottom: 5px;
+ }
+ .i3 {
+    margin-bottom: 5px;
+ }
+
+ .overlay__text1 {
+    top: 210px;
+    left :10px
+ }
+ 
+ 
+ .overlay__text2 {
+    top: 550px;
+    left: 10px;
+    color: white;
+ }
+
+ .overlay__text3 {
+    top: 850px;
+    left: 10px;
+    color: rgb(250, 241, 241);
+ }
+
+ .overlay__text4 {
+    top: 1120px;
+    left: 10px;
+    color: rgb(250, 241, 241);
+ }
+    
+ .ways__to__tour__chennai {
+    margin-left: 100px;
+ }
+
+ .Autumn__in__Asia {
+    margin-left: 100px;
+ }
+
+
+ .overlay__1 {
+    left: 20px;
+ }
+ .overlay__2 {
+color: #f9f2f2;
+left: 20px;
+top: 550px;
+ }
+
+ .overlay__3 {
+    color:white;
+    left: 20px;
+    top: 850px;
+ }
+
+ .overlay__4 {
+    color: white;
+    left: 20px;
+    top: 1120px;
+ }
+
+ 
+
+ .more__explore__img {
+   display: flex;
+   flex-direction: column;
+
+   flex-basis: 20%;
+    margin-right: 2000px;
+ }
+
+ .Top__destination {
+    margin-left: 100px;
+ }
+
+ .overla__1 {
+    left: 20px;
+ }
+ .overla__2 {
+    color: white;
+    left: 20px;
+    top: 550px;
+
+ }
+
+ .overla__3 {
+    color:white;
+    left: 20px;
+    top: 820px;
+
+ }
+
+ .overla__4 {
+    color:white;
+    left: 20px;
+    top: 1150px;
+ }
+
+ /* .image__container img {
+   width: 300px;
+   height: 300px;
+   
+   
+ }
+
+ .image__container {
+    margin-right: 850px;
+ }
+
+ .sentence {
+    top:220px;
+    font-size: 8px;
+
+ }
+
+ .bttn {
+    margin-top: 5px;
+    font-size: 10px;
+ } */
+
+ .more__explore__img {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px; 
+    margin-left: 0; 
+}
+
+.more__explore__img div {
+    flex-basis: 100%; 
+    margin: 0 10px; 
+}
+
+.more__explore__img img {
+    width: 60%; 
+    margin-right: 0px;
+    height: auto;
+}
+
+.image__and__its__text {
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+.image__container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; }
+
+.sentence {
+    position: static; 
+    padding: 10px;
+    text-align: center; 
+    font-size: 15px; 
+    color: #000;
+}
+
+.sentence button {
+    font-size: 16px;  
+    padding: 10px 20px; 
+    border-radius: 10px; 
+}
+
+    
+}
+
+
+
+
+
